@@ -1,0 +1,83 @@
+body {
+  background-color: hsl(0, 0%, 95%);
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  padding: 100px 200px;
+}
+
+h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  padding: 5% 12%;
+}
+
+p {
+  padding: 5% 12%;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: lighter;
+}
+
+.icons {
+  padding: 12% 12% 10%;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Button Section */
+.button {
+  border-radius: 30px;
+  margin: 12% 12% 10%;
+}
+
+.sedan button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+.button:hover {
+  background: transparent;
+  background-image: -webkit-linear-gradient(top, transparent, transparent);
+  background-image: -moz-linear-gradient(top, transparent, transparent);
+  background-image: -ms-linear-gradient(top, transparent, transparent);
+  background-image: -o-linear-gradient(top, transparent, transparent);
+  background-image: linear-gradient(to bottom, transparent, transparent);
+  text-decoration: none;
+  color: hsl(0, 0%, 95%);
+  border: solid 2px;
+}
+
+/* Media query */
+@media screen and (max-width: 991px) {
+  .sedan {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+
+  .luxury {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 0;
+  }
+}
